@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sistem Informasi Pendataan Karyawan Created By Marcel Prastiko Arthana</title>
+<link rel="stylesheet" type="text/css" href="1915051013_Marcel Prastiko Arthana_Latihan 3.css">
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="logo">
+		<img src="logoundiksha.png" width="100">
+</div>
+<nav class="nav">
+   <br><h1>Selamat Datang</h1>
+<h1>Sistem Informasi Pendataan Karyawan</h1></br>
+<ul>
+		<li><a href="#logout">Logout</a></li>
+	</ul>
+</nav>
+</header>
+<div class="wrapper">
+<aside class="sidebar">
+		<div style="padding: 10px;">
+				<b>Menu</b><br>
+			<hr>
+				<a href="www.biodatakaryawan.com/home">Home</a><br />
+				<a href="file:///C:/Users/LENOVO/Desktop/Latihan%204/1915051013_Marcel%20Prastiko%20Arthana_Latihan%201.html">Biodata</a><br />
+				<a href="file:///C:/Users/LENOVO/Desktop/Latihan%204/Latihan%204.html">Update Biodata</a><br />
+				<a href="www.www.biodatakaryawan.com/contact">Contact</a><br />
+			</div>
+</aside>
+<main class="content">
+	<div style="padding: 10px;">
+		<h1 align="center">Update Biodata Karyawan</h1></b>
+		<hr/>
+		<form action=" formulir.php" method="post" onSubmit="return ValidasiForm()" name="FormReg">
+		<div class="col-sm-4">
+			<form method="POST" enctype="multipart/form-data">
+				<div class="form-group">
+					<label>Upload Gambar Pegawai</label><br>
+					<input type="file" class="form-control" name="foto">
+					<br>
+					<button class="btn btn-warning" type="submit">Upload</button>
+				</div>	
+			</form>
+		</div>	
+		<td align="center"><img border="3" height="200" width="150" src="fotomarcel.jpg"></td>
+			<table>
+	<td>Contoh Gambar Yang Harus Diupload Oleh Pegawai.</td>
+				<tr>
+						<td>Nama</td>
+						<td>:</td>
+						<td><input type="text" name="nama" value="" placeholder="Tuliskan Nama Anda" /></td>
+				</tr>
+				<tr>
+						<td>Password</td>
+						<td>:</td>
+						<td> <input type="password" name="password" placeholder="Tuliskan Password Anda" /></td>
+				</tr>
+				<tr>
+						<td>NIK</td>
+						<td>:</td>
+						<td><input type="text" name="NIK" value="" placeholder="Tuliskan NIK Anda" /></td>
+				</tr>
+				<tr>
+						<td>Jenis Kelamin</td>
+						<td>:</td>
+						<td>
+							<input type="radio" name="jenis_kelamin" value="laki-laki" checked /> Laki - Laki
+							<input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan
+						</td>
+				</tr>
+		<tr>
+			<td>Golongan Darah</td>
+			<td>:</td>
+		<td>
+			<input type="radio" name="Golongan Darah" value="A" /> A
+			<input type="radio" name="Golongan Darah" value="B" /> B
+			<input type="radio" name="Golongan Darah" value="AB" /> AB
+			<input type="radio" name="Golongan Darah" value="O" checked /> O
+		</td>
+	</tr>
+		<tr>
+			<td>Hobi</td>
+			<td>:</td>
+		<td>
+			<input type="checkbox" name="hobi_baca" /> Membaca Buku
+			<input type="checkbox" name="hobi_nulis" checked /> Menulis
+			<input type="checkbox" name="hobi_mancing" /> Berenang 
+			<input type="checkbox" name="Berolahraga" /> Berolahraga
+			<input type="checkbox" name="Lainnya" /> Lainnya
+		</td>
+	</tr>
+				<tr>
+					<td>Agama</td>
+					<td>:</td>
+					<td> <select name="Agama">
+					<option>Islam</option>
+					<option>Kristen</option>
+					<option value="Kota Semarang" selected >Katolik</option>
+					<option>Hindu</option>
+					<option>Budha</option>
+					</select>
+					</td>
+				</tr>	
+				<tr>
+					<td>Asal Kota</td>
+					<td>:</td>
+					<td> <select name="asal_kota">
+					<option value="Kota Jakarta"> Jakarta</option>
+					<option>Bandung</option>
+					<option>Semarang</option>
+					<option>Surabaya</option>
+					<option value="Kota Semarang" selected>Singaraja</option>
+					</select>
+					</td>
+				</tr>
+			<tr>
+					<td>Tanggal Lahir</td>
+					<td>:</td>
+					<td><input type="date" name="tgl_lahir"></td>	
+			</tr>	
+			<tr>
+					<td>Tempat Lahir</td>
+					<td>:</td>
+					<td> <input type="text" name="Tempat Lahir" placeholder="Tuliskan Tempat Lahir Anda" /></td>
+			</tr>
+			<tr>
+					<td>Warga Negara</td>
+					<td>:</td>
+					<td> <input type="text" name="Warga Negara" placeholder="Tuliskan Warga Negara Anda" /></td>
+			</tr>
+			<tr>
+					<td>Alamat</td>
+					<td>:</td>
+					<td> <input type="text" name="Alamat" placeholder="Tuliskan Alamat Anda" /></td>
+			</tr>
+			<tr>
+					<td>Pendidikan Terakhir</td>
+					<td>:</td>
+					<td> <input type="text" name="Pendidikan Terakhir" placeholder="Tuliskan Pendidikan Terakhir Anda" /></td>
+			</tr>
+			<tr>
+					<td>No.HP</td>
+					<td>:</td>
+					<td> <input type="text" name="No.HP" placeholder="Tuliskan No.HP Anda"/></td>
+			</tr>
+			<tr>
+					<td>Email</td>
+					<td>:</td>
+					<td> <input type="text" name="Email" placeholder="Tuliskan Email Anda" /></td>
+			</tr>
+			<tr>
+					<td>Pesan</td>
+					<td>:</td>
+					<td><textarea name="Pesan" rows="5" cols="20"></textarea></td>
+			</tr>
+			<tr>
+			<td colspan="3" align="center"><input type="submit" value="Send"> </td>
+		</tr>
+			</table>
+		</form>
+	</div>
+</main>
+</div>
+		<footer class="footer">
+			<font color="blue"> Marcel Prastiko Arthana Copyright 2020 </blue>
+		</footer>
+	</div>
+</body>
+</html>
